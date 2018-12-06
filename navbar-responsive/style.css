@@ -1,0 +1,123 @@
+  html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    .fa-bars {
+      color: black;
+    }
+   
+    .topnav {
+      position: fixed;
+      right: 10%;
+      top: 2%;
+    }
+
+    #close-menu {
+      padding-left: 85%;
+    }
+
+    #menu-options {
+      position: fixed;
+      right: -70vw;
+      top: 0%;
+      background: linear-gradient(to bottom, #141E30, #243B55);
+      border-radius: 15px 0px 0px 15px;
+      color: white;
+      height: 100%;
+      width: 70vw;
+      font-family: 'Handlee', cursive;
+      font-size: 3rem;
+
+    }
+
+    #menu-options ul {
+      padding-right: 10%;
+      margin-top: 2%;
+
+    }
+
+    @media (min-width: 567px) {
+      
+
+      .container {
+      position: relative;
+      top:10%;
+    }
+
+      .topnav {
+        position: fixed;
+        right: 0%;
+        top: 0%;
+      }
+
+      .topnav a,
+      #close-menu {
+        display: none !important;
+      }
+
+      #menu-options {
+        overflow: hidden;
+        left: 0%;
+        top: 0%;
+        border-radius: 0px;
+        height: auto;
+        width: 100%;
+        animation-name: bounceInDown;
+        animation-duration: 1s;
+      }
+
+      #menu-options ul {
+        padding: 0%;
+        margin: 0%;
+      }
+
+      #menu-options ul li {
+        display: inline;
+        padding: 14px 16px;
+      }
+    }
+
+
+
+
+
+  @keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
