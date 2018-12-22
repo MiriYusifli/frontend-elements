@@ -1,86 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Navbar Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="style.css">
-
-  <!-- for icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- for font -->
-  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-
-<body>
-
-
-  <!-- Top Navigation Menu -->
-  <div class="topnav">
-    <a href="javascript:void(0);" class="icon">
-      <i class="fa fa-bars fa-2x"></i>
-    </a>
-    <div id="menu-options">
-      <ul style="list-style-type:none">
-        <li id="close-menu"><i class="fa fa-times"></i></li>
-        <li>Menu1</li>
-        <li>Menu2</li>
-        <li>Menu3</li>
-      </ul>
-    </div>
-  </div>
-
-
-
-
-  <script>
-
-
-    $(document).ready(function () {
-
-      var open = false;
-      $(".topnav a").click(function () {
-        $("#menu-options").animate({ right: '0vw' });
-        open = !open;
-      });
-
-      $("#close-menu").click(function () {
-        $("#menu-options").animate({ right: '-70vw' });
-        open = !open;
-      });
-
-
-
-
-    });
-
-
-  </script>
-
-
-
-
-  <div class="container">
-    <h3>Collapsible Navbar</h3>
-    <p>Lorem impus.</p>
-    <h3>Collapsible Navbar</h3>
-    <p>Lorem impus.</p>
-    <h3>Collapsible Navbar</h3>
-    <p>Lorem impus.</p>
-    <h3>Collapsible Navbar</h3>
-    <p>Lorem impus.</p>
-    <h3>Collapsible Navbar</h3>
-    <p>Lorem impus.</p>
-    <h3>Collapsible Navbar</h3>
-    <p>Lorem impus.</p>
-  </div>
-
-
-
-</body>
-
+   <head>
+      <title>Navbar Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <!-- for icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- for font -->
+      <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+         <a href="javascript:void(0);" class="icon">
+         <i class="fa fa-bars fa-2x"></i>
+         </a>
+         <div id="menu-options">
+            <ul style="list-style-type:none">
+               <li id="close-menu"><i class="fa fa-times"></i></li>
+               <li>Menu1</li>
+               <li>Menu2</li>
+               <li>Menu3</li>
+            </ul>
+         </div>
+      </div>
+      <script>
+         $(document).ready(function () {
+         
+           var open = false;
+           $(".topnav a").click(function () {
+             $("#menu-options").animate({ right: '0vw' });
+             open = !open;
+           });
+         
+           $("#close-menu").click(function () {
+             $("#menu-options").animate({ right: '-70vw' });
+             open = !open;
+           });
+         
+         
+         
+         
+         });
+         
+         
+      </script>
+      <div class="container">
+         <h3>Collapsible Navbar</h3>
+         <p>Lorem impus.</p>
+         <h3>Collapsible Navbar</h3>
+         <p>Lorem impus.</p>
+         <h3>Collapsible Navbar</h3>
+         <p>Lorem impus.</p>
+         <h3>Collapsible Navbar</h3>
+         <p>Lorem impus.</p>
+         <h3>Collapsible Navbar</h3>
+         <p>Lorem impus.</p>
+         <h3>Collapsible Navbar</h3>
+         <p>Lorem impus.</p>
+      </div>
+   </body>
 </html>
