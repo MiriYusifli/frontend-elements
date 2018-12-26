@@ -1,0 +1,179 @@
+@import url("animations.css");
+/* Debug */
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+video {
+  z-index: -1;
+  height: 100vh;
+}
+
+.info {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.name {
+  position: relative;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.social-networks {
+  position: relative;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:450px) {
+  .social-networks {
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media (min-width: 567px) {
+  .topnav {
+    position: fixed;
+    right: 0%;
+    top: 0%;
+  }
+  /* navbar -begin */
+  .topnav {
+    position: fixed;
+    right: 10%;
+    top: 4%;
+    z-index: 1;
+  }
+  #close-menu {
+    padding-left: 85%;
+  }
+  #menu-options {
+    position: fixed;
+    right: -70vw;
+    top: 0%;
+    border: 3px solid white;
+    border-radius: 50px 0px 0px 50px;
+    background-image: radial-gradient(circle, #555454, #403f3f, #2c2c2c, #1a1919, #000000);
+    color: white;
+    height: 100%;
+    width: 70vw;
+    font-family: 'Handlee', cursive;
+    font-size: 3rem;
+  }
+  #menu-options ul {
+    padding-right: 10%;
+    margin-top: 3%;
+  }
+  .topnav a, #close-menu {
+    display: none !important;
+  }
+  #menu-options {
+    overflow: hidden;
+    left: 0%;
+    top: 0%;
+    border-radius: 0px;
+    border: 0px;
+    background: transparent;
+    height: auto;
+    width: 100%;
+    animation-name: bounceInDown;
+    animation-duration: 1s;
+  }
+  #menu-options ul {
+    padding: 0%;
+    margin: 0%;
+  }
+  #menu-options ul li {
+    display: inline;
+    padding: 14px 16px;
+  }
+}
+
+/* navbar -end  */
+
+/* quote -begin */
+
+blockquote {
+  font-size: 2em;
+  margin: 50px auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #78C0A8;
+  border-right: 8px solid #78C0A8;
+  line-height: 1.6;
+  position: relative;
+  background: #EDEDED;
+  opacity: 0;
+}
+
+blockquote p {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  margin: 0 auto;
+  min-height: 44px;
+  /* mobile   height: 88px; */
+
+  /* Gives that scrolling effect as the typing happens */
+  text-align: center;
+}
+
+blockquote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #78C0A8;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+blockquote::after {
+  content: '';
+}
+
+blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  float: right;
+  margin-top: 1em;
+}
+
+/* quote -end */
