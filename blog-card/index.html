@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1">
+
+    <!-- for font -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- any position -->
+            <div style="margin:20% 10% 0 10%;">
+                <div class="post">
+                    <!-- <img src="1.png" alt=""> -->
+                    <img src="https://images.pexels.com/photos/237018/pexels-photo-237018.jpeg?cs=srgb&dl=asphalt-autumn-beauty-237018.jpg&fm=jpg">
+                    <h2>Regex Expression</h2>
+                    <p>
+                        Regular expression is a pattern that the regular expression engine attempts to match in an
+                        input
+                        text. A pattern consists of one or more character literals, operators,
+                    </p>
+                    <time>10.09.2018</time>
+                    <button><a href="#">Read more...</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<style>
+    /* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-family: 'Fira Sans', sans-serif;
+        color: black;
+    }
+
+
+    .post {
+        border-radius: 10px;
+        /* background-image: linear-gradient(to right, #cbb900, #8dc446, #4ec67c, #00c3a9, #04bcc7); */
+        background-image: linear-gradient(to right, #6c6c6c, #757e89, #7194a2, #6aabad, #78c0a8);
+        display: inline-block;
+        max-width: 620px;
+        position: relative;
+    }
+
+    .post img {
+        max-width: 40%;
+        max-height: 80%;
+        margin: 0 0 0 -10%;
+        border-radius: 10px;
+        float: left;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+
+
+    .post h2 {
+        margin-left: 35%;
+        text-align: center;
+    }
+
+    .post p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0 2% 0 35%;
+
+
+    }
+
+    .post time {
+        font-size: 1rem;
+        float: left;
+        margin: 2% 0 2% 35%;
+        color: white;
+
+    }
+
+    .post button {
+        background: white;
+        border-radius: 30px;
+        font-size: 1rem;
+        float: right;
+        margin: 2% 2% 2% 0;
+
+    }
+
+
+
+    @media only screen and (max-width: 680px) {
+        .post img {
+            position: relative;
+            max-width: 100%;
+            width: 80%;
+            margin: -20% 0 0 0;
+            border-radius: 10px;
+            top: 0;
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            float:none;
+
+        }
+
+        .post h2 {
+            margin: 0% 0 0 0;
+            position: relative;
+        }
+
+        .post p {
+            margin: 0 2% 0 2%;
+        }
+
+        .post time {
+            margin: 5% 0 10% 5%;
+        }
+
+        .post button {
+            margin: 5% 5% 10% 0%;
+        }
+
+    }
+</style>
+
+</html>
